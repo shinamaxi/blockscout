@@ -40,8 +40,6 @@ ADD apps/indexer/mix.exs ./apps/indexer/
 
 RUN mix do deps.get, local.rebar --force, deps.compile
 
-ADD shinascan_logo.png ./apps/block_scout_web/assets/static/images/shinascan_logo.png
-
 ADD . .
 
 COPY . .
@@ -80,4 +78,6 @@ COPY --from=builder /opt/release/blockscout .
 COPY --from=builder /app/apps/explorer/node_modules ./node_modules
 COPY --from=builder /app/config/config_helper.exs ./config/config_helper.exs
 COPY --from=builder /app/config/config_helper.exs /app/releases/${RELEASE_VERSION}/config_helper.exs
+COPY shinascan_logo.png /usr/local/lib/erlang/lib/erl_docgen-1.3/priv/images
+COPY shinascan_logo.png /app/lib/block_scout_web-5.2.0/priv/static/images
 

@@ -7,7 +7,7 @@ RUN apk --no-cache --update add alpine-sdk gmp-dev automake libtool inotify-tool
 ENV GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc \
     GLIBC_VERSION=2.30-r0 \
     PORT=4000 \
-    MIX_ENV="prod" \
+    MIX_ENV="dev" \
     SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5"
 
 RUN set -ex && \

@@ -40,7 +40,7 @@ ADD apps/indexer/mix.exs ./apps/indexer/
 
 RUN mix do deps.get, local.rebar --force, deps.compile
 
-COPY shinascan_logo.png ./apps/block_scout_web/assets/static/images/
+ADD shinascan_logo.png ./apps/block_scout_web/assets/static/images/shinascan_logo.png
 
 ADD . .
 

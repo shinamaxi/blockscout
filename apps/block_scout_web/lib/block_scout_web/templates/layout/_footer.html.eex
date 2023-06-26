@@ -19,9 +19,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("Shinarium, Shina Inu Companion & Powerful Layer 2 Protocol, is a developing cryptocurrency solution that runs on top of the Ethereum blockchain. The Shinarium Protocol provides the benefits of scalability, faster transaction times, lower fees, and an expanded development framework.
-
-<br><br><a href="https://shinarium.org">Shinarium.org</a> for more information") %></p>
+        <p class="footer-info-text"><%= gettext("Shinarium, Shina Inu Companion & Powerful Layer 2 Protocol, is a developing cryptocurrency solution that runs on top of the Ethereum blockchain. The Shinarium Protocol provides the benefits of scalability, faster transaction times, lower fees, and an expanded development framework.<br><br>Shinarium.org for more information") %></p>
         <div class="footer-social-icons">
           <a href="https://github.com/shinamaxi/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>
